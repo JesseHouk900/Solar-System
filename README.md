@@ -40,11 +40,11 @@ This project is a continuation of a school project to prototype different techni
 	
 ## Images without particle system
 
-![Initial view is from the side, from left to right: Sun, Mercury is obscured behind the Sun, Milennium Falcon, Earth with the Moon revolving around it, Mars, Saturn with its rings, and Titan and Enceladus revolving around Saturn in opposing orbits](https://postimg.cc/nXKNYPRf)
+![Initial view is from the side, from left to right: Sun, Mercury is obscured behind the Sun, Milennium Falcon, Earth with the Moon revolving around it, Mars, Saturn with its rings, and Titan and Enceladus revolving around Saturn in opposing orbits](https://postimg.cc/XpNfYY79)
 
-![A View from above, Saturn secluded to the right with its moons and rings](https://postimg.cc/jWZ9BJY8)
+![A View from above, Saturn secluded to the right with its moons and rings](https://postimg.cc/xq3GQzY0)
 
-![A bad isometric view with the planets clustering nearest the camera](https://postimg.cc/GBcVMxV8)
+![A bad isometric view with the planets clustering nearest the camera](https://postimg.cc/xq2GBPwx)
 
 
 ## Process
@@ -63,17 +63,17 @@ The following process was derived through a course taught by, now retired,
 	
 Using Visual Studio Community Edition, go to File<sup>1</sup>->New<sup>2</sup>->Project<sup>3</sup>.
 
-![1.1.png](https://postimg.cc/YLqSMFvh)
+![1.1.png](https://postimg.cc/JH0zSvMH)
 
 Go to Visual C++ Templates<sup>1</sup>, select Windows application project<sup>2</sup>, and browse to desired project location<sup>3</sup>
 
 Once configured, press OK.
 
-![1.2.png](https://postimg.cc/MXdTt9LR)
+![1.2.png](https://postimg.cc/t7vTFqN3)
 
 Remove<sup>3</sup> the provided cpp file<sup>2</sup> from the solution explorer<sup>1</sup>.
 
-![1.3.png](https://postimg.cc/KR1ZfxBS)
+![1.3.png](https://postimg.cc/Vd3kHKT5)
 
 ### Import files
 
@@ -117,7 +117,7 @@ The following files are necessary to run the included program:
 
 To add files to a project solution, in the Solution Explorer<sup>1</sup>->right click on a folder<sup>2</sup>->Add<sup>3</sup>->Existing Item...<sup>4</sup>
 
-![3.1.png](https://postimg.cc/56ytrwcr)
+![3.1.png](https://postimg.cc/23Syqbhj)
 
 Add in the imported files using the solution explorer:
 
@@ -146,19 +146,19 @@ Also add the following files inside of the SOIL folder to to project:
 
 Firstly, we need to configure the environment to allow access to the included libraries and prevent some errors. Go to Project<sup>1</sup>->Properties<sup>2</sup>
 	
-![4.1.png](https://postimg.cc/75TZHwZM)
+![4.1.png](https://postimg.cc/B83QJXJ0)
 
 Ensure your configuration<sup>2</sup> looks like this inside your configuration manager<sup>1</sup>:
 
-![4.2.png](https://postimg.cc/SJPKbJkx)
+![4.2.png](https://postimg.cc/jwdxJmW3)
 
 Close the configuration manager and go to C/C++<sup>1</sup> and change SDL checks<sup>2</sup> to "No (/sdl-)"<sup>3</sup> using the drop down and press Apply<sup>4</sup>
 
-![4.3.png](https://postimg.cc/B89Qtk8W)
+![4.3.png](https://postimg.cc/LqV452sZ)
 
 Go to Linker<sup>1</sup>->System<sup>2</sup>->Use the drop down on the SubSystem row<sup>3</sup> to change "Windows (/SUBSYSTEM:WINDOWS)" to "Console (/SUBSYSTEM:CONSOLE)"<sup>4</sup>
 
-![4.4.png](https://postimg.cc/hzKD1mbp)
+![4.4.png](https://postimg.cc/JsZzwbVx)
 
 ### Add libraries to environment
 
@@ -174,7 +174,7 @@ Once configured, press Apply<sup>6</sup>
 
 *: This is an example path refer to Notes section for more details
 
-![5.1.png](https://postimg.cc/t13R6kPs)
+![5.1.png](https://postimg.cc/HcZp0zXY)
 
   Your Visual Studio Community Edition environment should be ready to use.
 	
