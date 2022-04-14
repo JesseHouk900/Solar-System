@@ -57,11 +57,13 @@ Using Visual Studio Community Edition, go to File<sup>1</sup>->New<sup>2</sup>->
 
 ![1.1.png]()
 
-Go to Visual C++ Templates<sup>1</sup>, select empty project<sup>2</sup>, and browse to desired project location<sup>3</sup>
+Go to Visual C++ Templates<sup>1</sup>, select Windows application project<sup>2</sup>, and browse to desired project location<sup>3</sup>
 
-Once configured, press OK
+Once configured, press OK.
 
 ![2.1.png]()
+
+Remove the provided cpp file.
 
 ### Import files
 
