@@ -35,6 +35,8 @@ This project is a continuation of a school project to prototype different techni
 * 1/! - increase/decrease time of rotation
 	
 * r - reset orientation
+
+* q - quit/close program
 	
 ## Images without particle system
 	
@@ -61,17 +63,17 @@ Go to Visual C++ Templates<sup>1</sup>, select Windows application project<sup>2
 
 Once configured, press OK.
 
-![2.1.png]()
+![1.2.png]()
 
 Remove the provided cpp file.
+
+![1.3.png]()
 
 ### Import files
 
 Import desired files via the Solution explorer or start here if you already have a project.
 
-Download or clone this repository...
-
-![insert image?]()
+Download or clone this repository...(provide links)
 
 Copy the following files and folders or download from the above links and place
   into the [ProjectName]/[ProjectName] folder of your visual studio project:
@@ -90,34 +92,26 @@ Include the following to set up a standard vertex shader and fragment shader, mo
     * plyloader.cpp
     * plyloader.h
     * vshader_a6.glsl
-
-### Add libraries to environment
-
-To Recognize CommonOpenGL, Angelfiles, and SOIL, go to Project<sup>1</sup>->Properties<sup>2</sup>
 	
-![4.1.png]()
-
-Go to VC++ Directories<sup>1</sup> and add the following<sup>2</sup> to your Include Directories<sup>3</sup>:	
-
-    C:\GraphicsResources\lib\CommonOpenGL\include;C:\GraphicsResources\lib\CommonOpenGL\Angelfiles;<sup>2</sup>*
-
-Add the following<sup>4</sup> to your Library Directories<sup>5</sup>:
-  
-    C:\GraphicsResources\lib\CommonOpenGL\Simple OpenGL Image Library\src;C:\GraphicsResources\lib\CommonOpenGL\Simple OpenGL Image Library\lib;C:\GraphicsResources\lib\CommonOpenGL\lib;<sup>4</sup>
-
-Once configured, press Apply<sup>6</sup>
-
-*: This is an example path refer to Notes section for more details
-
-![4.2.png]()
-
-### Configure enironment settings
-
-Then go to C/C++<sup>1</sup> and change SDL checks<sup>2</sup> to "No (/sdl-)"<sup>3</sup> using the drop down and press Apply<sup>4</sup>
-
-![4.3.png]()
+The following files are necessary to run the included program:
+	
+	* Earth.ply
+	* Enceladus.ply
+	* Falcon.ply
+	* Mars.ply
+	* Mercury.ply
+	* Moon.ply
+	* Saturn.ply
+	* SaturnsRings.ply
+	* SolarSystem.cpp
+	* Sun.ply
+	* Titan.ply
 
 ### Add files to project solution
+
+To add files to a project solution, right click on a folder<sup>1</sup> in the Solution Explorer->Add...<sup>2</sup>->Existing Item<sup>3</sup>
+
+![3.1]()
 
 Add in the imported files using the solution explorer:
 
@@ -141,7 +135,41 @@ Also add the following files inside of the SOIL folder to to project:
     * stb_image_aug.h
     * stbi_DDS_aug.h
     * stbi_DDS_aug_c.h
+		
+### Configure enironment settings
+
+Firstly, we need to configure the environment to allow access to the included libraries and prevent some errors. Go to Project<sup>1</sup>->Properties<sup>2</sup>
 	
+![4.1.png]()
+
+Ensure your configuration looks like this:
+
+![4.2.png]()
+
+Close the configuration manager and go to C/C++<sup>1</sup> and change SDL checks<sup>2</sup> to "No (/sdl-)"<sup>3</sup> using the drop down and press Apply<sup>4</sup>
+
+![4.3.png]()
+
+Go to Linker->System->Use the drop down on the SubSystem row to change "Windows (/SUBSYSTEM:WINDOWS)" to "Console (/SUBSYSTEM:CONSOLE)"
+
+![4.4.png]()
+
+### Add libraries to environment
+
+To Recognize CommonOpenGL, Angelfiles, and SOIL, go to VC++ Directories<sup>1</sup> and add the following<sup>2</sup> to your Include Directories<sup>3</sup>:	
+
+    C:\GraphicsResources\lib\CommonOpenGL\include;C:\GraphicsResources\lib\CommonOpenGL\Angelfiles;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0;$(VC_IncludePath);$(WindowsSDK_IncludePath);<sup>2</sup>*
+
+Add the following<sup>4</sup> to your Library Directories<sup>5</sup>:
+  
+   C:\GraphicsResources\lib\CommonOpenGL\Simple OpenGL Image Library\src;C:\GraphicsResources\lib\CommonOpenGL\Simple OpenGL Image Library\lib;C:\GraphicsResources\lib\CommonOpenGL\lib;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um;$(LibraryPath)<sup>4</sup>
+
+Once configured, press Apply<sup>6</sup>
+
+*: This is an example path refer to Notes section for more details
+
+![5.1.png]()
+
   Your Visual Studio Community Edition environment should be ready to use.
 	
 ### Notes

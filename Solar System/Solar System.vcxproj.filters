@@ -15,6 +15,49 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Solar System.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="plyloader.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL\image_DXT.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL\image_helper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL\SOIL.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL\stb_image_aug.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL\stbi_DDS_aug.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SOIL\stbi_DDS_aug_c.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Solar System.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="fshader_a4.glsl">
       <Filter>Source Files</Filter>
     </None>
@@ -49,37 +92,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Model.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="plyloader.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SOIL\image_DXT.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SOIL\image_helper.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SOIL\SOIL.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SOIL\stb_image_aug.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SOIL\stbi_DDS_aug.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SOIL\stbi_DDS_aug_c.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Solar System.rc">
+    <Image Include="small.ico">
       <Filter>Resource Files</Filter>
-    </ResourceCompile>
+    </Image>
+    <Image Include="Solar System.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
